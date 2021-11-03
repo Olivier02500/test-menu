@@ -1,0 +1,60 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**
+ * Menu
+ */
+
+header {
+    background: #66b3ff;
+    color: #f1f1f1;
+    text-align: right;
+}
+
+.menu {
+    font-size: 2rem;
+}
+
+.menu > ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 1% 2%;
+}
+
+.menu i {
+    background: #2492ff;
+    border: 2px solid grey;
+    border-radius: 5px;
+    display:none ;
+    float: right;
+    padding: 3%;
+}
+
+.menu > ul li:hover {
+    color: indianred;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 415px) {
+    header {
+        width:35% ;
+        padding: 5% 2%;
+        text-align: left;
+    }
+
+    .menu> ul {
+        padding-top: 10%;
+    }
+
+    .menu i {
+        display:block;
+        float: right;
+    }
+}
